@@ -18,14 +18,17 @@ public:
 
         
         balance = balance - 200;
-
-        
+    }
+ void display()
+{
         cout << "Name: " << name << endl;
         cout << "Final Balance= " << balance << endl;
-    }
+}
 };
 
-int main() {
-    Bank b1;  
+int main() 
+{
+    Bank b1; 
+   b1.display () ;
     return 0;
 }
