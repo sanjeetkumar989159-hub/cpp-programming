@@ -63,7 +63,7 @@ public:
 int main()
 {
     Result r;
-
+    
     r.getPerson();
     r.getMarks();
     r.getSports();
