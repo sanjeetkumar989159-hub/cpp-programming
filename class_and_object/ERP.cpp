@@ -162,7 +162,7 @@ public:
         remainingFee = totalFee - paidFee;
     }
 
-    void displayFee()
+    void displayFee() 
     {
         cout << "\n---------------- FEE DETAILS ---------------\n";
 
