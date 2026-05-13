@@ -24,7 +24,6 @@ public:
     void getSalary() {
         cout << "Enter Basic Salary: ";
         cin >> basic;
-
         cout << "Enter HRA: ";
         cin >> hra;
 
