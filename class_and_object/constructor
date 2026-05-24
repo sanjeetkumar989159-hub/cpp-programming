@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+class student{   
+    public:
+        string name;
+        int roll_nu;
+        float gpa;
+
+        // Constructor
+
+        student (string s,int r,float g){
+            name = s;
+            roll_nu = r;
+            gpa = g;
+        }
+
+};
+int main(){
+
+    student x1("sanjeet kumar",34545,9.9);
+    
+    student x2("OP",2345,9.3);
+   
+    
+    cout<<x1.name<<"\n";
+    cout<<x1.gpa<<"\n";
+    cout<<x1.roll_nu<<"\n";
+    cout<<x2.name<<"\n";
+    cout<<x2.gpa<<"\n";
+    cout<<x2.roll_nu<<"\n";
+
+    return 0;
+}
