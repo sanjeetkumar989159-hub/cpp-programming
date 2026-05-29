@@ -9,7 +9,6 @@ public:
         cout << "Virat Kohli scored " << t20_runs << " runs in T20 cricket." << endl;
         return t20_runs;
     }
-
     int performance(int odi_runs, int odi_matches) {
         cout << "Virat Kohli scored " << odi_runs << " runs in "
              << odi_matches << " ODI matches." << endl;
