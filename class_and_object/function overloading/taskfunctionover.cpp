@@ -11,7 +11,7 @@ public:
     int banking(int balance,int credit)
     {
         balance=balance+credit;
-
+        
         cout<<"Balance after credit: "<<balance<<endl;
     }
     int banking(int balance,int credit,int debit)
