@@ -12,7 +12,7 @@ public:
         cout << "Enter Name: ";
         cin >> name;
     }
- 
+
     void display() {
         cout << "Roll No: " << rollNo << endl;
         cout << "Name: " << name;
