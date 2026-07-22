@@ -1,0 +1,100 @@
+#include <iostream>
+using namespace std;
+
+string username = "";
+string password = "";
+
+void registerUser() {
+    if (username != "") {
+        cout << "User already registered!\n";
+        return;
+    }
+
+    cout << "Enter Username: ";
+    cin >> username;
+
+    cout << "Enter Password: ";
+    cin >> password;
+
+    cout << "Registration Successful!\n";
+}
+
+void loginUser() {
+    string u, p;
+
+    if (username == "") {
+        cout << "Please register first!\n";
+        return;
+    }
+
+    cout << "Enter Username: ";
+    cin >> u;
+
+    cout << "Enter Password: ";
+    cin >> p;
+
+    if (u == username && p == password)
+        cout << "Login Successful!\n";
+    else
+        cout << "Invalid Username or Password!\n";
+}
+
+void changePassword() {
+    string oldPass, newPass;
+
+    if (username == "") {
+        cout << "No user registered!\n";
+        return;
+    }
+
+    cout << "Enter Old Password: ";
+    cin >> oldPass;
+
+    if (oldPass == password) {
+        cout << "Enter New Password: ";
+        cin >> newPass;
+        password = newPass;
+        cout << "Password Changed Successfully!\n";
+    } else {
+        cout << "Wrong Password!\n";
+    }
+}
+
+void showUser() {
+    if (username == "")
+        cout << "No user registered!\n";
+    else
+        cout << "Registered User: " << username << endl;
+}
+
+int main() {
+    int choice;
+
+    while (1) {
+        cout << "\n===== Login & Registration System =====\n";
+        cout << "1. Register\n";
+        cout << "2. Login\n";
+        cout << "3. Change Password\n";
+        cout << "4. Show Username\n";
+        cout << "5. Exit\n";
+        cout << "Enter Choice: ";
+        cin >> choice;
+
+        if (choice == 1)
+            registerUser();
+        else if (choice == 2)
+            loginUser();
+        else if (choice == 3)
+            changePassword();
+        else if (choice == 4)
+            showUser();
+        else if (choice == 5) {
+            cout << "Thank You!\n";
+            break;
+        }
+        else
+            cout << "Invalid Choice!\n";
+    }
+
+    return 0;
+}
