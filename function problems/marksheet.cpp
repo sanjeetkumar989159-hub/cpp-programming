@@ -30,7 +30,7 @@ int marksheet(string name, string cls, char sec, int enrolment, int marks1, int 
     {
         marksheet("arya sumit", "10th", 'A', 12345, 85, 90, 78, 92, 88);
         marksheet("rishi kumar", "10th", 'A', 12346, 80, 85, 75, 88, 82);
-        marksheet("sanjee yadav", "10th", 'A', 12347, 75, 80, 70, 85, 78);
+        marksheet("sanjeet yadav", "10th", 'A', 12347, 75, 80, 70, 85, 78);
         return 0;
     }
         
